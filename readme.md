@@ -3,7 +3,7 @@
 **I am 'K.SATYA CHITTI ABHINAV' from hyderabad,telangana, fresher at amrita school of engineering(2022) **
 **Tasks List**|**Description**|**Status**
 --------------|---------------|---------------
-[Task-00](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-1)|Installing Ubuntu|Completed
+[Task-00](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-0)|Installing Ubuntu|Completed
 [Task-01](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-1)|Staring amFOSS repositories|Completed
 [Task-02](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-2)|Terminal Hunt|Completed
 [Task-03](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-3)|Hackerrank|Done Three Questions
