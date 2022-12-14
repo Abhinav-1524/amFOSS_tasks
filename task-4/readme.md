@@ -1,0 +1,2 @@
+#Cine bot
+This task was one of my hardest encounters to say as i had no idea of functions before so i had to learn them and then i understood the code.It ttok me time to get the environmental variables as i had faced some errors like the env' were not installing and i did a lot of google search for this and for me to convert the data tos csv fie is the hardest part here as i had to earn about file handling here.so this took a quite a time for me.
