@@ -1,4 +1,6 @@
 using System;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 // check whether all required namespaces are imported
 
@@ -17,34 +19,39 @@ public class SynchronousSocketClient
             // check if the port is defined or not
             IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            IPEndPoint remoteEP = new IPEndPoint(ipAddress, 8080);
+            IPEndPoint remoteEP = new IPEndPoint(ipAddress, 11000);
 
             // Check whether TCP Socket is created correctly
-            Socket sender = new Socket(ipAddress.AddressFamily);
+            Socket sender = new Socket(ipAddress.AddressFamily,SocketType.Stream,ProtocolType.Tcp);
 
             // Connect the socket to the remote endpoint. Catch any errors.  
             try
             {
                 sender.Connect(remoteEP);
 
-                Console.WriteLine("Socket connected to {0}",
+                
+                while(true)
+                {
+                    Console.WriteLine("Socket connected to {0}",
                     sender.RemoteEndPoint.ToString());
 
-                // check if the variable is defined correctly or not
-                Console.WriteLine("Enter the Person Name: ");
-                name = Console.ReadLine();
-                Console.WriteLine("Enter the Person Intrest: ");
-                int intrests = Console.ReadLine();
-                Console.WriteLine("Enter the Person Email: ");
-                mail = Console.ReadLine();
-                // Encode the data string into a byte array.  
-                // check the data type of the data you are sending.
-                bytes msg = Encoding.ASCII.GetBytes(name + "," + intrests + "," + mail);
+                    // check if the variable is defined correctly or not
+                    Console.WriteLine("Enter the Person Name: ");
+                    string name = Console.ReadLine();
+                    Console.WriteLine("Enter the Person Intrest: ");
+                    string intrests = Console.ReadLine();
+                    Console.WriteLine("Enter the Person Email: ");
+                    string mail = Console.ReadLine();
+                    // Encode the data string into a byte array.  
+                    // check the data type of the data you are sending.
+                    byte[] msg = Encoding.ASCII.GetBytes(name + "," + intrests + "," + mail);
 
-                // Send the data through the socket.  
-                int bytesSent = sender.Send(msg);
-
+                    // Send the data through the socket.  
+                    int bytesSent = sender.Send(msg);
+                }
                 // Close the socket.
+                sender.Shutdown(SocketShutdown.Both);
+                sender.Close();
 
             }
             catch (ArgumentNullException ane)
@@ -70,7 +77,7 @@ public class SynchronousSocketClient
     // check the main function
     public static int Main(String[] args)
     {
-        Start();
+        StartClient();
         return 0;
     }
 }
