@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 // check whether all required namespaces are imported
 public class SynchronousSocketListener
@@ -19,14 +21,14 @@ public class SynchronousSocketListener
         IPAddress ipAddress = ipHostInfo.AddressList[0];
         IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
 
-        // Check whether TCP Socket is created correctly
-        Socket listener = new Socket(ipAddress.AddressFamily);
+       
 
-        // Bind the socket to the local endpoint and
-        // listen for incoming connections.  
         string fileName = "file.json";
         try
         {
+            Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+
+            
             listener.Bind(localEndPoint);
             listener.Listen(10);
 
@@ -36,14 +38,17 @@ public class SynchronousSocketListener
                 Console.WriteLine("Waiting for a connection...");
                 // Program is suspended while waiting for an incoming connection.  
                 Socket handler = listener.Accept();
-                data = null;
+        
+
+                string data = null;
+            
 
                 // An incoming connection needs to be processed.  
                 // check if the varibale is defined or not also even correctly defined
-                bytesRec = handler.Receive(bytes);
+                int bytesRec = handler.Receive(bytes);
                 data = Encoding.ASCII.GetString(bytes, 0, bytesRec);  
-                //Console.WriteLine("Text received : {0}", data);
-                string[] dataArr = data.Split(/*Add required input for splitting the string*/);
+                Console.WriteLine("Text received : {0}", data);
+                string[] dataArr = data.Split(",");
                 string name = dataArr[0];
                 string intrests = dataArr[1];
                 string mail = dataArr[2];
@@ -51,7 +56,8 @@ public class SynchronousSocketListener
                 Console.WriteLine("Name: {0}", name);
                 Console.WriteLine("Intrests: {0}", intrests);
                 Console.WriteLine("Email: {0}", mail);
-                if (/*Add condition based on the code*/)
+                string path=@"C:\Users\aarya\Desktop\task-05\Server\bin\Debug\net6.0";
+                if (!File.Exists(path))
                 {
                     using (StreamWriter sw = File.AppendText(fileName))
                     {
@@ -82,7 +88,7 @@ public class SynchronousSocketListener
     // check the main function
     public static int Main(String[] args)
     {
-        Start();
+        StartListening();
         return 0;
     }
 }
