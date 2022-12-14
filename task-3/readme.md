@@ -1,2 +1,2 @@
-#HACKER RANK
+# HACKER RANK
 I did not attempt Hacker rank because i wanted to explore the rest of the tasks. I was curious about the remaining tasks because i learnt python recently and it was taking time so i thought to just keep it at last and could do it if i have time.but i was unable to do it.my thought was like to get exposed to the programming world out there and try each and every area.so,i just did the remaining tasks instead of to be struck in here.
