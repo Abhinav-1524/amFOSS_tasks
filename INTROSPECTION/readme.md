@@ -1,4 +1,6 @@
 #INTROSPECTION
+
+
 A.Why must we choose you?
 ans: The reason u must choose me is i learn things quickly and can implement with a better accuracy this is assured.I'll agree if i don't know something but i can learn it really quick.There maybe others who are better than me but i have the confidence that i can outbeat them.Computers is a field where i'm highly intrested in . I can work day and night on this and not getting tired.For a beginner i think i'm preety fast at these things as i have analysed myself the past month and it was most productive.I worked on tasks until 3 am everyday from last month and i think this drive and the intrest in me can fetch me miles.I started with nothing and within 1 and half months i'm here with this new knowledge and ready to learn more.The Drive and curiosity in me never dies .
 
