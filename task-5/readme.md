@@ -1,2 +1,2 @@
-#Find the bug 
+# Find the bug 
 The task was a bit tricky for me.Actually i had some prior knowledge of c (watched some youtube videos).so it helped me to understand c# a bit.i followed the resources which was given in the amfoos task-sheet.it helped me a bit to learn about socket programming.I watched some videos for socket programming even.I was struck some times had no resource to hep ,so i completed this task with the help of my friend.we worked the errors and succesfully resolved them.
