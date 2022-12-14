@@ -6,14 +6,14 @@
 [Task-00](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-0)|Installing Ubuntu|Completed
 [Task-01](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-1)|Staring amFOSS repositories|Completed
 [Task-02](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-2)|Terminal Hunt|Completed
-[Task-03](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-3)|Hackerrank|Done Three Questions
+[Task-03](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-3)|Hackerrank|not attempted till yet
 [Task-04](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-4)|Cine Bot|Completed
 [Task-05](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-5)|Find The Bug|Completed
 [Task-06](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-6)|Flame Game|DONE(everything is working good but i added a joystick instead of buttons)
 [Task-07](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-7)|Go WASM|Dind't do it but learnt about it
 [Task-08](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-8)|Internet Explorer|Completed
 [Task-09](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-9)|Krypto Scrapper|Completed
-[Task-10](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-10)|CS50|Not Attempted till yet
+[Task-10](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-10)|CS50|3 problem sets completed
 [Task-11](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-11)|Figma Ninja|Not Attempted till yet
 [Task-12](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-12)|Bunny Heist|Not Attempted till yet
 [Task-13](https://github.com/Abhinav-1524/amFOSS_tasks/tree/main/task-13)|FootFall Counter(Arduino)|Completed
